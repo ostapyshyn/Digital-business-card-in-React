@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-h1, h2, p  {
+h1, h2, p {
     margin: 0;
 }
 
@@ -19,10 +19,10 @@ body {
 }
 
 
-
 .about {
     background: #F5F5F5;
     padding-bottom: 20px;
+    padding-top: 25px;
 }
 
 .container {
@@ -39,7 +39,6 @@ body {
     width: 172px;
     margin: 0 auto;
 }
-
 
 
 .about-header, .interests-header {
@@ -72,6 +71,7 @@ body {
     background-color: #D5D4D8;
     border-radius: 0 0 10px 10px;
 }
+
 .footer-image {
     width: 25px;
     height: 25px;
@@ -87,8 +87,7 @@ body {
 }
 
 
-
-.button {
+.button, .button-email {
     display: flex;
     height: 34px;
     width: 115px;
@@ -113,6 +112,8 @@ body {
 }
 
 .button__text,
+.button__text__email,
+.button__icon__email,
 .button__icon {
     display: inline-flex;
     align-items: center;
@@ -121,12 +122,12 @@ body {
     height: 100%;
 }
 
-.button__icon {
+.button__icon, .button__icon__email {
     font-size: 16px;
     padding-left: 15px;
 }
 
-.button__text {
+.button__text, .button__text__email {
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -139,4 +140,53 @@ body {
 .buttons {
     display: flex;
     justify-content: space-between;
+}
+
+.name {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #2B283A;
+    margin-top: 20px;
+}
+
+.position {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #F47D27;
+    margin-top: 6px;
+}
+
+.info-site {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 150%;
+    /* identical to box height, or 15px */
+    text-align: center;
+    color: #4A4E74;
+    margin-top: 8px;
+    margin-bottom: 17px;
+}
+
+.button-email {
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+}
+
+.button__text__email {
+    color: #374151;
+}
+
+.button__icon__email {
+    color: #374151;
+    padding-left: 25px;
 }
